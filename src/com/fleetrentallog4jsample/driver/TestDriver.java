@@ -7,6 +7,7 @@ import com.fleetrentallog4jsample.model.domain.Itinerary;
 import com.fleetrentallog4jsample.model.domain.RentalComposite;
 import org.apache.log4j.Logger;
 
+
 /*-
  * Please note that the FleetRental application can be run either by running
  * the ViewDriver class or this class. This class tests the Controller and Model
@@ -16,28 +17,29 @@ import org.apache.log4j.Logger;
  *  
  * A real world implementation, would of course have a View (either Swing or Web based).
  * 
-	* Runtime(VM Options) Setup to load application properties:
+ * Runtime(VM Options) Setup to load application properties:
  *  
-	 ///////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////
   // Need to pass property file that is loaded by PropertyManager
-		// 1. From IDE, set the VM Options under Project Properties
-		//     -Dprop_location=<path>\config\application.properties
-		// 2. Build.xml: reads off from the target to run the app with the sys property set as :
-		//   <sysproperty key="prop_location" value="${config.dir}application.properties"/>
+  // 1. From IDE, set the VM Options under Project Properties
+  //     -Dprop_location=<path>\config\application.properties
+  // 2. Build.xml: reads off from the target to run the app with the sys property set as :
+  //   <sysproperty key="prop_location" value="${config.dir}application.properties"/>
 
-	* Runtime(VM Options) Setup to load log4j properties:
+ * Runtime(VM Options) Setup to load log4j properties:
  *  
- 	 ///////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////
   // Need to pass log4j configuration file that is loaded by Log4JInit
-		// 1. From IDE, set the VM Options under Project Properties
-		//     -Dlog4j_prop_location=<path>\config\log4j.properties
-		// 2. Build.xml: reads off from the target to run the app with the sys property set as :
-		//   <sysproperty key="log4j_prop_location" value="${config.dir}log4j.properties"/>
+  // 1. From IDE, set the VM Options under Project Properties
+  //     -Dlog4j_prop_location=<path>\config\log4j.properties
+  // 2. Build.xml: reads off from the target to run the app with the sys property set as :
+  //   <sysproperty key="log4j_prop_location" value="${config.dir}log4j.properties"/>
 
  * 
  * @author Mike.Prasad
  *
  */
+
 public class TestDriver {
 
     /*
